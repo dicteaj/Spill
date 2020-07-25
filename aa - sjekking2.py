@@ -30,6 +30,7 @@ walkLeft = [pygame.image.load('/Users/dicte/PycharmProjects/pygame/L1.png'),
             pygame.image.load('/Users/dicte/PycharmProjects/pygame/L8.png'),
             pygame.image.load('/Users/dicte/PycharmProjects/pygame/L9.png')]
 
+#bakgrunn
 bg = pygame.image.load('/Users/dicte/PycharmProjects/pygame/bg.jpg').convert()
 bgX = 0
 bgX2 = bg.get_height()
@@ -180,8 +181,8 @@ class enemy(object):
 
 
 def redrawGameWindow():
-    win.blit(bg, (bgX, 0))
-    win.blit(bg, (bgX2, 0))
+    win.blit(bg, (0, bgX))
+    win.blit(bg, ( 0, bgX2))
     #win.blit(bg, (0, 0))
     text = font.render('score:' + str(score), 1, (0,0,0))
     win.blit(text, (350,10))
