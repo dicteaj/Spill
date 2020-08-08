@@ -2,6 +2,12 @@
 import pygame
 pygame.init()
 
+#ikonet til spillet
+icon = pygame.image.load("/Users/dicteaj/PycharmProjects/Spill/Bilder/heart.png")
+pygame.display.set_icon(icon)
+
+#navn til spillet
+pygame.display.set_caption("Jansen minigame")
 
 bredde = 500
 høyde = 500
