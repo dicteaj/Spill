@@ -1,4 +1,4 @@
-import pygame # trenger for å få tilgang til pygame bibloteket
+gitimport pygame # trenger for å få tilgang til pygame bibloteket
 
 # initierer pygame
 pygame.init()

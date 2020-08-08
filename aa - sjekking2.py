@@ -7,35 +7,35 @@ win = pygame.display.set_mode((500, 480))
 pygame.display.set_caption("First Game")
 
 #ikonet til spillet
-icon = pygame.image.load('/Users/dicte/PycharmProjects/pygame/heart.png')
+icon = pygame.image.load("/Users/dicteaj/PycharmProjects/Spill/Bilder/L1.png")
 pygame.display.set_icon(icon)
 
 #laster bilder til spillet
-walkRight = [pygame.image.load('/Users/dicte/PycharmProjects/pygame/R1.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R2.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R3.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R4.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R5.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R6.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R7.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R8.png'),
-             pygame.image.load('/Users/dicte/PycharmProjects/pygame/R9.png')]
-walkLeft = [pygame.image.load('/Users/dicte/PycharmProjects/pygame/L1.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/l2.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L3.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L4.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L5.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L6.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L7.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L8.png'),
-            pygame.image.load('/Users/dicte/PycharmProjects/pygame/L9.png')]
+walkRight = [pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R1.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R2.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R3.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R4.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R5.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R6.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R7.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R8.png'),
+             pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R9.png')]
+walkLeft = [pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L1.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/l2.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L3.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L4.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L5.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L6.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L7.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L8.png'),
+            pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L9.png')]
 
 #bakgrunn
-bg = pygame.image.load('/Users/dicte/PycharmProjects/pygame/bg.jpg').convert()
+bg = pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/bg.jpg').convert()
 bgX = 0
 bgX2 = bg.get_height()
 
-char = pygame.image.load('/Users/dicte/PycharmProjects/pygame/standing.png')
+char = pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/standing.png')
 
 clock = pygame.time.Clock()
 
@@ -108,24 +108,24 @@ class projectile(object):
 
 #FIENDE
 class enemy(object):
-    walkRight = [pygame.image.load('/Users/dicte/PycharmProjects/pygame/R1.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R2.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R3.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R4.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R5.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R6.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R7.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R8.png'),
-                 pygame.image.load('/Users/dicte/PycharmProjects/pygame/R9.png')]
-    walkLeft = [pygame.image.load('/Users/dicte/PycharmProjects/pygame/L1.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/l2.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L3.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L4.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L5.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L6.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L7.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L8.png'),
-                pygame.image.load('/Users/dicte/PycharmProjects/pygame/L9.png')]
+    walkRight = [pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R1.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R2.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R3.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R4.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R5.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R6.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R7.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R8.png'),
+                 pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/R9.png')]
+    walkLeft = [pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L1.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/l2.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L3.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L4.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L5.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L6.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L7.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L8.png'),
+                pygame.image.load('/Users/dicteaj/PycharmProjects/Spill/Bilder/L9.png')]
 
     def __init__(self, x, y, width, height, end):
         self.x = x
@@ -177,7 +177,6 @@ class enemy(object):
             self.health -= 1
         else:
             self.visible = False
-        print('hit')
 
 
 def redrawGameWindow():
@@ -210,7 +209,7 @@ while run:
     bgX -= 1.4
     bgX2 -= 1.4
 
-    if bgX < bg.get_height() * -1:  # If our bg is at the -width then reset its position
+    if bgX < bg.get_height() * -1:  #
         bgX = bg.get_height()
 
     if bgX2 < bg.get_height() * -1:
